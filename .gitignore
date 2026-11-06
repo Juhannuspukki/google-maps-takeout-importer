@@ -1,0 +1,15 @@
+# Personal Google Maps exports and import files
+/SavedPlaces.json
+/SavedPlaces.csv
+/saved-places*.json
+/saved-places*.csv
+/imports/
+
+# Local/editor and generated files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.crx
+*.zip

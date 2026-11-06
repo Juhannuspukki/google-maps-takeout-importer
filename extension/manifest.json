@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Maps Favorites Importer",
+    "version": "1.0",
+    "description": "Imports places from SavedPlaces.json into a Google Maps list (personal use).",
+    "permissions": ["storage"],
+    "action": { "default_popup": "popup.html" },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/maps*", "https://maps.google.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}

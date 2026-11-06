@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { width: 340px; font: 13px sans-serif; padding: 8px; }
+        label, button, input { display: block; margin: 6px 0; width: 100%; box-sizing: border-box; }
+        #status { max-height: 320px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+        #error { color: #b00020; white-space: pre-wrap; overflow-wrap: anywhere; }
+    </style>
+</head>
+<body>
+    <label>Saved places file (JSON or CSV) <input type="file" id="file" accept=".json,.csv,application/json,text/csv"></label>
+    <label>Target list name (as shown in Maps UI)
+        <input type="text" id="list" value="Starred Places">
+    </label>
+    <button id="start">Load &amp; start (in current Maps tab)</button>
+    <button id="stop">Stop</button>
+    <button id="resume">Resume</button>
+    <pre id="error"></pre>
+    <pre id="status"></pre>
+    <script src="popup.js"></script>
+</body>
+</html>
